@@ -1,0 +1,60 @@
+.form__group {
+    margin-top: 30px;
+}
+
+.form__input {
+    color: #333;
+    font-size: 18px;
+    padding-top: 12px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 220px;
+    display: block;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
+}
+
+.form__input2 {
+    color: #333;
+    font-size: 18px;
+    padding-top: 12px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+    margin-left: 155px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 640px;
+    display: block;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
+}
+
+.form__input3 {
+    color: #333;
+    font-size: 18px;
+    padding-top: 12px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+    margin-left: 170px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 640px;
+    display: block;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
+}
+
+.go a {
+    color: #333;
+    text-decoration: none;
+}
+
+.go a:hover {
+    color: #333;
+    text-decoration: none;
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pro-exchanger</title>
+    <link rel="icon" href="./images/3.png">
+    <link rel="stylesheet" href="./style/nav_style.css">
+    <link rel="stylesheet" href="./style/dropdown.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./style/content_style.css">
+    <link rel="stylesheet" href="./style/footer_style.css">
+    <link rel="stylesheet" href="./style/cubes.css">
+    <link rel="stylesheet" href="./style/input.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script src="./frontend/calculator.js"></script>
+    <script src="./frontend/cubes.js"></script>
+    <section></section>
+    <div class="wrapper">
+
+        <div class="wrapper-header">
+            <div>
+                <a class="logo" href="./index.html">pro-exchanger</a>
+                <ul class="nav">
+                    <li><a href="./index.html">Главная</a></li>
+                    <li><a href="./frontend/pages/about_us.html">О нас</a></li>
+                    <li><a href="./frontend/pages/rules.html">Правила</a></li>
+                    <li><a href="./frontend/pages/partners.html">Партнеры</a></li>
+                    <li><a href="./frontend/pages/FAQ.html">FAQ</a></li>
+                    <li><a href="./frontend/pages/contacts.html">Контакты</a></li>
+                </ul>
+                <ul class="user">
+                    <li><a href="./frontend/pages/log_in.html">Войти</a></li>
+                    <li><a href="./frontend/pages/sign_in.html">Регистрация</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="wrapper-content">
+            <div class="content-window">
+                <div class="top" id="top">
+                    <div class="select-menu" id="select-menu">
+
+                        <h3>Вы отдаете</h3>
+                        <div class="select-btn">
+                            <span id="selectCoin1" class="sBtn-text selected">Ничего не выбрано</span>
+                        </div>
+                        <ul class="options" id="coinsOptions">
+
+                            <li class="option" data-coin="bitcoin" id="bitcoin">
+                                <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png"
+                                    alt="BitcoinImage">
+                                <span id="bitcoin" class="option-text selected">Bitcoin BTC</span>
+                            </li>
+
+                            <li class="option" data-coin="ethereum" id="ethereum">
+                                <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png"
+                                    alt="EthereumImage">
+                                <span id="ethereum" class="option-text selected">Ethereum ETH</span>
+                            </li>
+
+                            <li class="option" data-coin="tether" id="tether">
+                                <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/825.png"
+                                    alt="TetherImage">
+                                <span id="tether" class="option-text selected">Tether USDT</span>
+                            </li>
+
+                            <li class="option" data-coin="cardano" id="cardano">
+                                <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/2010.png"
+                                    alt="CardanoImage">
+                                <span id="cardano" class="option-text selected">Cardano ADA</span>
+                            </li>
+
+                            <li class="option" data-coin="dogecoin" id="dogecoin">
+                                <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/74.png"
+                                    alt="DogecoinImage">
+                                <span id="dogecoin" class="option-text selected">Dogecoin DOGE</span>
+                            </li>
+
+                            <li class="option" data-coin="tron" id="tron">
+                                <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1958.png"
+                                    alt="TRONImage">
+                                <span id="tron" class="option-text selected">TRON TRX</span>
+                            </li>
+
+                            <li class="option" data-coin="shibainu" id="shibainu">
+                                <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/5994.png"
+                                    alt="ShibaInuImage">
+                                <span id="shibainu" class="option-text selected">Shiba Inu SHIB</span>
+                            </li>
+
+                            <li class="option" data-coin="litecoin" id="litecoin">
+                                <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/2.png"
+                                    alt="LitecoinImage">
+                                <span id="litecoin" class="option-text selected">Litecoin LTC</span>
+                            </li>
+
+                            <li class="option" data-coin="terraclassic" id="terraclassic">
+                                <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/4172.png"
+                                    alt="TerraClassicImage">
+                                <span id="terraclassic" class="option-text selected">Terra Classic LUNC</span>
+                            </li>
+
+                            <li class="option" data-coin="chiliz" id="chiliz">
+                                <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/4066.png"
+                                    alt="ChilizImage">
+                                <span id="chiliz" class="option-text selected">Chiliz CHZ</span>
+                            </li>
+
+                        </ul>
+                        <div class="form__group">
+                            <input class="form__input" type="number" size="10" id="input1" placeholder="Номинал"
+                                required="" />
+                        </div>
+                    </div>
+                    <div class="select-menu select-menu1" id="select-menu1">
+                        <h3>Вы получаете</h3>
+                        <div class="select-btn select-btn1">
+                            <span id="selectCoin2" class="sBtn-text sBtn-text1 selected">Ничего не выбрано</span>
+                        </div>
+                        <ul class="options options1" id="coinsOptions1">
+
+                            <li class="option option1" data-coin="bitcoin2" id="bitcoin2">
+                                <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png"
+                                    alt="BitcoinImage">
+                                <span id="bitcoin2" class="option-text option-text1 selected1">Bitcoin BTC</span>
+                            </li>
+
+                            <li class="option option1" data-coin="ethereum2" id="ethereum2">
+                                <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png"
+                                    alt="EthereumImage">
+                                <span id="ethereum2" class="option-text option-text1 selected1">Ethereum ETH</span>
+                            </li>
+
+                            <li class="option option1" data-coin="tether2" id="tether2">
+                                <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/825.png"
+                                    alt="TetherImage">
+                                <span id="tether2" class="option-text option-text1 selected1">Tether USDT</span>
+                            </li>
+
+                            <li class="option option1" data-coin="cardano2" id="cardano2">
+                                <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/2010.png"
+                                    alt="CardanoImage">
+                                <span id="cardano2" class="option-text option-text1 selected1">Cardano ADA</span>
+                            </li>
+
+                            <li class="option option1" data-coin="dogecoin2" id="dogecoin2">
+                                <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/74.png"
+                                    alt="DogecoinImage">
+                                <span id="dogecoin2" class="option-text option-text1 selected1">Dogecoin DOGE</span>
+                            </li>
+
+                            <li class="option option1" data-coin="tron2" id="tron2">
+                                <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1958.png"
+                                    alt="TRONImage">
+                                <span id="tron2" class="option-text option-text1 selected1">TRON TRX</span>
+                            </li>
+
+                            <li class="option option1" data-coin="shibainu2" id="shibainu2">
+                                <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/5994.png"
+                                    alt="ShibaInuImage">
+                                <span id="shibainu2" class="option-text option-text1 selected1">Shiba Inu SHIB</span>
+                            </li>
+
+                            <li class="option option1" data-coin="litecoin2" id="litecoin2">
+                                <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/2.png"
+                                    alt="LitecoinImage">
+                                <span id="litecoin2" class="option-text option-text1 selected1">Litecoin LTC</span>
+                            </li>
+
+                            <li class="option option1" data-coin="terraclassic2" id="terraclassic2">
+                                <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/4172.png"
+                                    alt="TerraClassicImage">
+                                <span id="terraclassic2" class="option-text option-text1 selected1">Terra Classic
+                                    LUNC</span>
+                            </li>
+
+                            <li class="option option1" data-coin="chiliz2" id="chiliz2">
+                                <img class="icon" src="https://s2.coinmarketcap.com/static/img/coins/64x64/4066.png"
+                                    alt="ChilizImage">
+                                <span id="chiliz2" class="option-text option-text1 selected1">Chiliz CHZ</span>
+                            </li>
+
+                        </ul>
+                        <div class="form__group">
+                            <input class="form__input" type="number" id="input2" placeholder="Номинал" required="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom" id="bottom">
+                    <div class="form__group" id="form_group1">
+                        <input type="text" class="form__input2" id="inputWallet" placeholder="На кошелек:"
+                            required="" />
+                    </div>
+                    <div class="form__group" id="form_group2">
+                        <input type="text" class="form__input2" id="inputEmail" placeholder="Email:" required="" />
+                    </div>
+                    <button class="go" id="startTransaction" action="send.php" type="button"><a href="#">Начать
+                            обмен</a></button>
+                </div>
+                <p class="title-text" id="completeP">Обмен в процессе...</p>
+                <p class="title-text" id="pleaseP">Для выполнения транзакции, пожалуйста, внесите сумму:</p>
+
+                <p id="pleaseP2"><input disabled="true" class="transactionInput transactionInput1"
+                        id="transactionAmountPlease"></p>
+                <p id="pleaseP3"><input disabled="true" class="transactionInput transactionInput2"
+                        id="transactionWalletPlease"></p>
+
+                <p class="mini-title-text" id="transactionP">Номер транзакции: <input disabled="true"
+                        class="transactionInput transactionInput3" id="transactionNumber">
+                </p>
+                <p class="mini-title-text" id="mailP">Почта: <input name="mail" disabled="true"
+                        class="transactionInput transactionInput3" id="transactionEmail"></p>
+
+                <p class="mini-title-text" id="walletP1">Кошелек отправителя: <input name="wallet1" disabled="true"
+                        class="transactionInput transactionInput3" id="transactionWallet1"></p>
+
+                <p class="mini-title-text" id="walletP2">Кошелек получателя: <input name="wallet2" disabled="true"
+                        class="transactionInput transactionInput3" id="transactionWallet2"></p>
+
+                <p class="mini-title-text" id="amountP">Сумма: <input name="amount" disabled="true"
+                        class="transactionInput transactionInput3" id="transactionMoney"></p>
+
+                <p class="mini-title-text" id="comissionP">Комиссия: 0.2%</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-items">
+                <ul class="help">
+                    <li>Поддержка по почте - <a href="#">pro-exchanger@mail.ru</a></li>
+                    <li>Круглосуточная поддержка - <a href="https://web.telegram.org/z/#5633778796">открыть чат</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2022 pro-exchanger. Копирование материалов только с разрешения правообладателя.
+        </div>
+    </footer>
+    <script src="./frontend/dropdown.js"></script>
+</body>
+
+</html>
