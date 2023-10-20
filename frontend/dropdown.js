@@ -14,7 +14,7 @@ options.forEach(option => {
     option.addEventListener('click', () => {
         let selectedOption = option.querySelector('.option-text').innerText;
         sBtn_text.innerText = selectedOption;
-        optionMenu.classList.remove('active')
+        optionMenu.classList.remove('active') 
     })
 })
 
